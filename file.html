@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Free Web tutorials">
+  <meta name="keywords" content="HTML, CSS, JavaScript">
+  <meta name="author" content="John Doe">
+                                            <!-- class in style [outlie css] -->
+  <style>
+.city {
+  background-color: tomato;
+  color: white;
+  padding: 10px;
+}
+/* creating id */
+#citynew {
+  background-color: green;
+  color: white;
+  padding: 10px;
+}
+</style>
+
+
+                                <!-- /* hide somethings  class With JAvascript [create a finction] */ -->
+<script>
+function myFunction() {
+var x = document.getElementsByClassName("city");
+for (var i = 0; i < x.length; i++) {
+x[i].style.display = "none";
+}
+}
+</script>
+
+</head>
+<body>
+                                          <!-- create a bookmark -->
+<p><a href="#citynew">Jump to GK</a></p>
+
+
+                                          <!--   call the function by onclick -->
+
+<button onclick="myFunction()">Hide this elements</button>
+<h2 class="city">Paris vola</h2>
+<p id ='citynew'>GK: Paris is the capital of France.</p>
+<h1 id ='citynew'>Paris is the capital of France.</h1>
+
+
+                                  <!-- ID WITH JAVASCIPT       -->
+<script>
+function displayResult() {
+  document.getElementById("change").innerHTML = "Successfully changed the line";
+}
+</script>
+<button onclick="displayResult()"> Change Text(application of ID with JS) </button>
+<p id="change"> This line will be changed, click above button </p>
+
+                              <!-- webpage within a wepage -->
+<p style="text-align:center;"> Webpage within a webpage with iframe: att-> src,title,height,width,border:4px solid red;........<br>
+<iframe src="https://akshayanil1080.github.io/mywebsite/." style="border:4px solid red;" height="500" width="1000" title="Mywebsite"></iframe>
+
+
+                                  <!-- <h3>print somwhting usig JS</h3> -->
+<h1 id="demo"></h1>
+<script>
+document.getElementById("demo").innerHTML = "Printing using JS : HELLO WORLD";
+</script>
+
+                                  <!-- JS FUNCTION CREATE AND CALL -->
+<button type="button" onclick="myFunction()">Click Me to chnage via JS: func call with onclick</button>
+<p id="demonew">This is a demonstration.</p>
+<script>
+function myFunction() {
+  document.getElementById("demonew").innerHTML = "Hello JavaScript!";
+}
+</script>
+
+                      <!-- adding video and audio -->
+<video width="400" controls>
+  <source src="files/Cars.mp4" type="video/mp4">
+  Not supported
+</video>
+
+<br><br>
+<audio controls>
+  <source src="files/guitar.mp3" type="audio/mp3">
+Your browser does not support the audio element.
+</audio>
+
+                          <!-- adding youtube videos -->
+<br>
+<p style="text-align:center;"> ivyhacks participation <br>
+
+<iframe width="1000" height="500" src="https://www.youtube.com/embed/uj0YORgu-bs" ></iframe>
+
+
+
+
+
+
+
+</body>
+</html>
