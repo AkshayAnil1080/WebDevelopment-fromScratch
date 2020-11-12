@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+                        <!-- CSS alignment -->
+<style>
+
+p {
+  color: red;
+  text-align: center;
+}
+</style>
+                  <!-- Css selectors(S):
+                  Css element (S) -->
+<style>
+              /* CSS ID S */
+#para1 {
+  text-align: center;
+  color: green;
+}
+              /* Css class S */
+.center {
+  text-align: center;
+  color: blue;
+}
+p.center {
+  text-align: center;
+  color: orange;
+}
+p.large {
+  font-size: 300%;
+}
+            /* Css Universal S
+*{
+  font-size: 300%;                  for every element
+} */
+
+h3, h4, h5 {
+  text-align: left;
+  color: red;
+}
+</style>
+</head>
+<body>
+
+<p>Hello World!</p>
+<p class="center">Css class S</p>
+<p id="para1"> Css ID S</p>
+<p class="center large">Selector with two class prop.</p>
+
+<h3> CSS grouping S </h3>
+<h4> CSS grouping S </h4>
+<h5> CSS grouping S </h5>
+
+            <!--3 HOW TO css,MSS AND CASCADING -->
+<!-- <head>
+<link rel="stylesheet" type="text/css" href="mystyle.css">   EXTERNAL
+<style>
+body background-color: linen;                                  INTERNAL
+</style>
+</head>
+<body style="background-color: red">                          INLINE -->
+
+              <!-- 4. css COMMENTS
+              5. CSS COLOURS : rgb,hex,hsl -->
+6. CSS BACKGROUNDS
+<style>
+h1 {
+  background-color: green;
+  opacity: 0.3;
+}
+
+div {
+  background-color: lightblue;
+}
+
+body {
+  background-color:black;
+  background-image:url(files/new.gif);
+    background-repeat: repeat-x;
+  background-repeat: no-repeat;
+    background-position: right top;
+     margin-right: 300px;
+background-attachment: fixed;
+}
+
+/* body {
+  background: red url("files/new.gif")  no-repeat left top;
+} */
+
+</style>
+<h1> hi </h1>
+<div>
+  <p> Inheriting the prop of div.</p>
+</div>
+                                      <!-- CSS orders 11 types -->
+<style>
+
+  p.dotted {border-style: dotted;
+            border-width: 25px 20px 25px 20px; /* 25px top, 10px right, 4px bottom and 35px left [clockwise]*/
+             border-color: pink green blue yellow; /* red top, green right, blue bottom and yellow left [clockwise order] */
+    }
+  p.dashed {border-style: dashed;}
+  p.solid {border-style: solid;}
+  p.double {border-style: double;}
+  p.groove {border-style: groove;
+      border-width: 25px 20px 25px 20px;
+  border-color: darkmagenta green blue yellow;
+}
+  p.ridge {border-style: ridge;}
+  p.inset {border-style: inset;}
+  p.outset {border-style: outset;}
+  p.none {border-style: none;}
+  p.hidden {border-style: hidden;}
+  p.mix {border-style: dotted dashed solid double;}
+  p.shorthand {
+    border-bottom: 20px solid red;   /* shorthand only understands width, height and color */
+    background-color: blue;
+    border-radius:20px;
+  }
+
+div.margins{
+  border : 20px  solid yellow;
+  margin: 100px 90px 80px 70px;
+  background-color: orange;
+}
+.boxmodel{
+  background-color: lightgrey;
+width: 500px;
+border: 5px solid green;
+padding: 5px;
+margin: auto;
+}
+
+  </style>
+
+  <p class="dotted">A dotted border.</p>
+<p class="dashed">A dashed border.</p>
+<p class="solid">A solid border.</p>
+<p class="double">A double border.</p>
+<p class="groove">A groove border.</p>
+<p class="ridge">A ridge border.</p>
+<p class="inset">An inset border.</p>
+<p class="outset">An outset border.</p>
+<p class="none">No border.</p>
+<p class="hidden">A hidden border.</p>
+<p class="mix">A mixed border.</p>
+<p class="shorthand"> Border made via Shorthand which inputs three parameters as width, height and color.</p>
+8. MARGINS
+<div class="margins">
+  div element with margin-top/right/bottom/left as 100,90,80,70 px
+  </div>
+<div class="boxmodel">
+    This is a boxmodel with the use of borders and margins
+</div>
+
+</body>
+</html>
