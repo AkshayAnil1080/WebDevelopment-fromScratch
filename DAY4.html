@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title> DAY4 </title>
+<style>
+  body{
+    background-color:powderblue;
+  }
+  h1{
+
+    border : 5px dotted yellow;
+    text-align: center;
+    color: black;
+      text-shadow: 5px 5px 20px red;
+  }
+  div.sticky {
+    text-align: center;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    padding: 5px;
+    background-color:BlanchedAlmond;
+    border: 2px solid #4CAF50;
+  }
+
+  #overflow
+  {
+
+    text-align: justify;
+    background: Khaki;
+     border: 1px solid #ccc;
+     overflow:scroll;
+     height: 70px;
+     width : 30%;
+     margin:auto;
+
+  }
+
+  .topic
+  {
+    background-color: lightgrey;
+width: 300px ;
+border: 15px solid green;
+text-align: center;
+padding: 10px;
+margin: auto;
+
+  }
+ /* navigation bar */
+  ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}
+
+.active {
+  background-color: red;
+}
+                     /* float and clearfix */
+img {
+  float: right;
+   border: 3px solid #4CAF50;
+   padding  : 10px;
+}
+div.clearfix {
+ border: 3px solid #4CAF50;
+ overflow: auto;
+ padding  : 10px;
+}
+  </style>
+</head>
+
+<body>
+
+  <div class="sticky"> LEARNING WITH AKSHAY ANIL AT W3Schools.com </div>
+  <ul>
+
+    <li><a href="https://akshayanil1080.github.io/mywebsite/" target="_blank" class="active">MyWebsite</a></li>
+    <li><a href=" https://www.linkedin.com/in/akshay-anil-26672a172/" target="_blank" >Linkedin</a></li>
+    <li><a href="https://github.com/AkshayAnil1080" target="_blank">Github</a></li>
+      <li><a href="https://akshayanil1080.github.io/WebDevelopment-fromScratch/DAY3" >DAY3</a></li>
+  </ul>
+<h1> DAY 4 </h1>
+<p class="topic"> 22. CSS OVERFLOW </p>
+<div id="overflow">Third year CSE undergrad with vehement engrossment and experience in programming, big data analytics. I am looking forward towards a workplace where predominantly I can learn new things by simultaneously contributing towards the organization through my skills. overflow-x/y: visible/scroll/hidden/auto
+  </div>
+<hr>
+<p class="topic"> 23. CSS FLOAT Examples : NavigationBar </p>
+<div class="clearfix">
+<p> <img src ="files/hair.jpg" alt="hairy"> </img> this is a right floated image, what is <b>float?</b> it will not overlap your written text with image: What is <b>clearfix:</b> make your image in the same box as text: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Mauris ante ligula, facilisis sed ornare eu, lobortis in odio. Praesent convallis urna a lacus interdum ut hendrerit risus congue. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta. Cras ac leo purus. Mauris quis diam velit </p>
+</div>
+<hr>
+
+<p class="topic"> 24. CSS INLINE-BLOCK </p>
+<b>display: inline-block</b> is to display list items horizontally instead of vertically.  Eg. to create multiple links in same line.
+<br>
+<b>display: block</b>, the major difference is that<b> display: inline-block </b>does not add a line-break after the element, so the element can sit next to other elements.
+<hr>
+
+<p class="topic"> 24. CSS ALIGN </p>
+<b> margin:auto;</b> <br>
+<b> text-align : center;</b> <br>
+ To center an image, set left and right margin to <b>auto</b> and make it into a <b>block</b> element: <br>
+<b>position:absolute; </b>  to align to right 
+
+
+
+  </body>
+  </html>
