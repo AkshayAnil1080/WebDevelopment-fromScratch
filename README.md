@@ -11,7 +11,7 @@ Course Link : https://www.w3schools.com/
 - [x] __8. Adding audio and video__
 
 		****************************************
-#DAY2
+# DAY2
 
 - [x] __1. CSS Intro__
 - [x] __2. CSS Syntax__
