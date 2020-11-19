@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title> DAY5 </title>
+<style>
+  body
+  {
+
+  margin : 0;
+  }
+
+
+  ul{
+    list-style-type:none;
+    margin: 0;
+    padding: 0;
+    width:25%;
+    background-color:chocolate;
+    height:100%;
+    position:fixed;
+    overflow:auto;
+  }
+
+    li a{
+      display: block;
+      color:black;
+      padding: 8px 16px;
+      text-decoration: none    /* to remove the underline of the link*/
+    }
+
+    li a.active
+  {
+    background-color : green;
+    color: white;
+  }
+   li a:hover:not(.active)
+   {
+     background-color: gray;
+     color:white;
+   }
+  h1{
+
+      border : 5px dotted yellow;
+      text-align: center;
+      color: black;
+        text-shadow: 5px 5px 20px red;
+    }
+    .topic
+    {
+      background-color: lightgrey;
+  width: 300px ;
+  border: 15px solid green;
+  text-align: center;
+  padding: 10px;
+  margin: auto;
+   }
+h1.pic::before
+{
+  content : url("files/smile.jpg");
+}
+
+    .subtopic
+    {
+      background-color: lightgrey;
+  width: 100% ;
+  border: 1px solid green;
+  text-align: center;
+
+
+    }
+    .content
+    {
+      text-align : center;
+
+    }
+    a
+    {
+      text-decoration:none;
+    }
+
+
+  div.sticky {
+    text-align: center;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    padding: 5px;
+    background-color:BlanchedAlmond;
+    border: 2px solid #4CAF50;
+  }
+
+p.magicselection::selection
+  {
+    color: red;
+    background : black;
+  }
+  p.magicselection::first-letter{
+    color:red;
+    font-size: xx-large;
+  }
+  p.magicselection::first-line{
+    color: hotpink;
+    font-variant: small-caps;
+  }
+
+  img.insert
+  {
+    opacity:0.5;
+    float:right;
+  }
+  img.insert:hover
+  {
+    opacity:1;
+  }
+  .clearfix
+  {
+    overflow:auto;
+  }
+  .borders{
+    border:5px solid red;
+    overflow:auto;
+  }
+  </style>
+
+   <body>
+
+     <div class="sticky"> LEARNING WITH AKSHAY ANIL AT W3Schools.com </div>
+
+     <ul>
+
+      <li><a href="https://akshayanil1080.github.io/mywebsite/" target="_blank" class="active">MyWebsite</a></li>
+      <li><a href=" https://www.linkedin.com/in/akshay-anil-26672a172/" target="_blank" >Linkedin</a></li>
+      <li><a href="https://github.com/AkshayAnil1080" target="_blank">Github</a></li>
+      <li><a href="https://akshayanil1080.github.io/WebDevelopment-fromScratch/DAY1" >DAY1</a></li>
+      <li><a href="https://akshayanil1080.github.io/WebDevelopment-fromScratch/DAY2" >DAY2</a></li>
+      <li><a href="https://akshayanil1080.github.io/WebDevelopment-fromScratch/DAY3" >DAY3</a></li>
+        <li><a href="https://akshayanil1080.github.io/WebDevelopment-fromScratch/DAY4" >DAY4</a></li>
+    </ul>
+
+    <div style="margin-left:25%;padding:1px 16px;height:1000px;">
+    <h1 class="pic" > DAY 5 </h1>
+  <a href="https://www.w3schools.com/css/css_pseudo_classes.asp">  <p class="topic"> 27. CSS PSEUDO-CLASS </p> </a>
+    <div class =" content">
+    A pseudo-class is used to define a special state of an element.</div>
+
+    <p class="subtopic" > hover on div & simpletooltip hover</p>
+
+  <!-- hover on div and simpletooltip on hover -->
+<style>
+  p.one{
+    display:none;
+    background-color: yellow;
+     padding: 20px;
+  }
+  div.one:hover p {
+    background-color: crimson;
+  display: block;
+}
+div.one{
+  text-align : center;
+  background-color: yellow;
+}
+div.one:hover
+{
+  background-color: hotpink;
+}
+
+</style>
+
+<div class ="one">WHO AM I ?
+  <p class ="one" >AKSHAY ANIL - extremenly punctual</p>
+</div>
+<hr>
+  <a href="https://www.w3schools.com/css/css_pseudo_elements.asp">  <p class="topic"> 28. CSS PSEUDO-elements </p> </a>
+<p class="magicselection"> I AM IRON MAN......select me....,CSE undergrad with vehement engrossment and really likes to work on real-life projects. I like to explore and work on  different domains of Computer Science such as BigData, CloudComputing , machine learning, Competitive Programming. Right now, I'm more inclined towards Bigdata and do some more cool projects. I aim to build a personal AI like JARVIS from IRON MAN series and have made a voice assistant too and workingo on its customization.</p>
+<hr>
+
+  <a href="https://www.w3schools.com/css/css_pseudo_classes.asp">  <p class="topic"> 29. CSS OPACITY </p> </a>
+  <div class="borders" >
+    <img class="insert" src="files/profile.jpg" alt="profilepicture" style="width:300; height:500; margin-left:15px"> </img>
+<p>I am the kinda of guy who just can sit idle and do nothing all day, I need a COUNTDOWN to get my life running. That's actually one my interest , keeping myself busy with something always.
+
+I really like doing real life projects which affects lives of people and makes difference.
+The new upcoming and emerging TECH interests me very much
+
+Apart from Tech. Playing guitar is something I really like. It is like a remedy that flashbacks me to state of calmness and gives a kickstart for working again with full throttle.</p>
+</div>
+<hr>
+  <a href="https://www.w3schools.com/css/css_navbar.asp">  <p class="topic"> 30. CSS NAVIAGTION-BAR </p> </a>
+  <pre>
+      <b>   1.NavigationBar
+          2.Vertical NavigationBar
+          3.Horizontal NavigationBar
+      </b>
+  </pre>
+</div>
+        </body>
+        </html>
